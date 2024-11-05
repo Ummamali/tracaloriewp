@@ -1,0 +1,52 @@
+/* animation for modal */
+.modal-in {
+  animation: modal-in-kf 300ms forwards ease-in-out;
+}
+
+.modal-out {
+  animation: modal-out-kf 300ms forwards ease-in-out;
+}
+
+@keyframes modal-in-kf {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes modal-out-kf {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* animations for crud items */
+.crud-item-in {
+  animation: crud-in-kf 250ms forwards ease-in-out;
+}
+.crud-item-out {
+  animation: crud-out-kf 250ms forwards ease-in-out;
+}
+
+@keyframes crud-in-kf {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes crud-out-kf {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

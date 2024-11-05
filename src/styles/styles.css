@@ -1,0 +1,66 @@
+/* global stylesheet */
+
+body,
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  /* container */
+  --container-width: 1100px;
+  --container-padding: 30px;
+}
+
+input::placeholder {
+  font-family: inherit;
+  opacity: 0.5;
+}
+
+/* own utility classes */
+.mycontainer {
+  max-width: var(--container-width);
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* my input */
+.my-input {
+  border: 1px solid #aaa;
+  display: block;
+  width: 100%;
+  padding: 4px 8px;
+  font-size: 0.9rem;
+  border-radius: 3px;
+}
+
+/* buttons */
+.btn {
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 4px;
+  background: transparent;
+  padding: 10px 16px;
+  font-size: 0.85rem;
+  color: white;
+}
+
+.btn:hover {
+  filter: brightness(110%);
+  cursor: pointer;
+}
+
+/* banner card in the header */
+.banner-card {
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+  flex: 1;
+}
+.banner-card h2 {
+  font-size: 1.8rem;
+}
+.banner-card p {
+  font-size: small;
+}

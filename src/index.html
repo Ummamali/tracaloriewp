@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Tracalorie | Track your day</title>
+  </head>
+  <body>
+    <header class="bg-green-600 py-3">
+      <div class="mycontainer flex items-center justify-between gap-8">
+        <h1 class="text-xl text-white">Tracalorie</h1>
+        <div class="space-x-2">
+          <button id="set-daily-limit" class="btn text-xs">
+            Set Daily Limit
+          </button>
+          <button id="reset-day" class="btn text-xs">Reset Day</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="mycontainer">
+        <div class="py-6">
+          <div class="flex gap-4">
+            <div class="banner-card bg-zinc-800 text-white">
+              <h2 id="daily-limit">1500</h2>
+              <p>Daily Calorie Limit</p>
+            </div>
+            <div class="banner-card bg-green-600 text-white/90">
+              <h2 id="net-gain">1500</h2>
+              <p>Net Gain</p>
+            </div>
+          </div>
+          <div class="flex gap-4 mt-4">
+            <div
+              class="banner-card bg-zinc-100 text-black/80 border border-zinc-300"
+            >
+              <h2 id="calories-consumed">1500</h2>
+              <p>Calories Consumed</p>
+            </div>
+            <div
+              class="banner-card bg-zinc-100 text-black/80 border border-zinc-300"
+            >
+              <h2 id="calories-burned">1500</h2>
+              <p>Calories Burned</p>
+            </div>
+            <div
+              class="banner-card bg-zinc-100 text-black/80 border border-zinc-300"
+            >
+              <h2 id="calories-remaining">1500</h2>
+              <p>Calories Remaining</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <div id="progress-container" class="flex-1 bg-zinc-200 rounded-full">
+            <div
+              id="progress"
+              class="w-0 h-2 bg-green-600 rounded-full transition-all duration-1000 ease-linear"
+            ></div>
+          </div>
+          <p id="progress-percentage" class="text-gray-700 text-sm">67%</p>
+        </div>
+      </div>
+      <!-- section of the meals and workout list -->
+      <div class="mt-6 mb-6">
+        <div class="mycontainer grid grid-cols-2 divide-x divide-gray-400">
+          <div class="pr-4">
+            <div class="flex items-center justify-between mb-3">
+              <h2 class="font-semibold text-gray-600">Meal/Food Items</h2>
+              <button class="btn bg-green-600 text-xs" id="add-meal">
+                <i class="fa-solid fa-add"></i> Add Meal
+              </button>
+            </div>
+            <input
+              type="text"
+              id="search-meal"
+              placeholder="search meals..."
+              class="my-input mb-4"
+            />
+            <div id="meals-list" class="space-y-2"></div>
+          </div>
+          <div class="pl-4">
+            <div class="flex items-center justify-between mb-3">
+              <h2 class="font-semibold text-gray-600">Workouts</h2>
+              <button class="btn bg-green-600 text-xs" id="add-workout">
+                <i class="fa-solid fa-add"></i> Add Workout
+              </button>
+            </div>
+            <input
+              type="text"
+              id="search-workout"
+              placeholder="search workouts..."
+              class="my-input mb-4"
+            />
+            <div id="workout-list" class="space-y-2"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
