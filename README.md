@@ -16,7 +16,7 @@ This project is developed using **Object-Oriented Programming (OOP)** principles
 
 ### 📌 Repository  
 You can find the simple version of the project here:  
-[Tracalorie Webpack Version](https://github.com/ummamali/tracalorie)  
+[Tracalorie Javascript Version](https://github.com/ummamali/tracalorie)  
 
 ### 🚀 Key Differences in the Webpack Version  
 
