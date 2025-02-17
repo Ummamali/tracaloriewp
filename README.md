@@ -4,7 +4,7 @@
 
 The application is deployed at tracaloriewp.vercel.app
 
-<img src='./preview.jpg'/>
+
 
 ---
 
