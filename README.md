@@ -1,6 +1,8 @@
 # 🔥  Tracalorie (Webpack Version)
 
-**Tracalorie** is a web application that helps users keep track of their daily calorie intake and expenditure. Users can set a calorie goal for the day, add calories consumed from food, and subtract calories burned through workouts. The app provides a clean and simple interface to monitor and manage daily calorie balance effectively.  
+**Tracalorie** is a web application that helps users keep track of their daily calorie intake and expenditure. Users can set a calorie goal for the day, add calories consumed from food, and subtract calories burned through workouts. The app provides a clean and simple interface to monitor and manage daily calorie balance effectively.
+
+<img src='./preview.jpg'/>
 
 ---
 
